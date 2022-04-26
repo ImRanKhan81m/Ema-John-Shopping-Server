@@ -73,6 +73,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('John is running and waiting for Ema')
 });
+app.get('/view', (req, res) => {
+    res.send('John is running ')
+});
 
 app.listen(port, () => {
     console.log('John is running on port', port);
